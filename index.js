@@ -49,8 +49,7 @@ const tasks = [
 
 
 
-   const array6= tasks.reduce((previus,current,indice,array)=>
-  current.name+":"+current.duration,"")
+   const array6= tasks.reduce((previus,current)=>{previus+(current.name),0})
 
 //const array6 = tasks.reduce(function (previus, current) {
 //  if (previus.legnth < current.name.length) {

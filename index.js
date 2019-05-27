@@ -42,11 +42,17 @@ const tasks = [
 //
 //const array3=tasks.find(x=>x.duration==60);
 
-var array4=tasks.map(task => task.duration).reduce((previus,current)=>previus+current,0)
+//var array4=tasks.map(task => task.duration).reduce((previus,current)=>previus+current,0)
+//var array4=tasks.reduce((previus,current)=>previus+current.duration,0);
+var array5= tasks.reduce((previus,current)=> previus.length<current.name.length ?
+ previus=current.name : previus=previus ,"" );
+
+
+
 
 //console.log(arrayfilter);
 //console.log(array);
 //console.log(array1);
 //console.log(array2);
 //console.log(array3);
-console.log(array4);
+console.log(array5);

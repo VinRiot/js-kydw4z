@@ -28,7 +28,7 @@ const tasks = [
 
 ];
 //const array = tasks.map(task => task.duration)
-const arrayfilter = tasks.find(task => task.name.startsWith('w'))//.map(task => task.name);
+//const arrayfilter = tasks.find(task => task.name.startsWith('w'))//.map(task => task.name);
 //
 //const array1 = tasks.map(task => {
 //  task.duration /= 60
@@ -44,7 +44,7 @@ const array3=tasks.find(x=>x.duration==60);
 
 
 
-console.log(arrayfilter);
+//console.log(arrayfilter);
 //console.log(array);
 //console.log(array1);
 //console.log(array2);

@@ -3,7 +3,7 @@ const tasks = [
 
   {
 
-    'name': 'write for Envato Tuts+',
+    'name': 'write',
 
     'duration': 120,
 
@@ -12,7 +12,7 @@ const tasks = [
 
   {
 
-    'name': 'Work out',
+    'name': 'Workout',
 
     'duration': 60
 
@@ -20,7 +20,7 @@ const tasks = [
 
   {
 
-    'name': 'Procrastinate on Duolingo',
+    'name': 'Procrastinate',
 
     'duration': 240
 
@@ -44,8 +44,13 @@ const tasks = [
 
 //var array4=tasks.map(task => task.duration).reduce((previus,current)=>previus+current,0)
 //var array4=tasks.reduce((previus,current)=>previus+current.duration,0);
-const array5 = tasks.reduce((previus, current) => previus.length < current.name.length ?
-   current.name :  previus, "");
+//const array5 = tasks.reduce((previus, current) => previus.length < //current.name.length ?
+//   current.name :  previus, "");
+
+
+
+   const array6= tasks.reduce((previus,current,indice,array)=>
+  current.name+":"+current.duration,"")
 
 //const array6 = tasks.reduce(function (previus, current) {
 //  if (previus.legnth < current.name.length) {
@@ -66,4 +71,4 @@ const array5 = tasks.reduce((previus, current) => previus.length < current.name.
 //console.log(array1);
 //console.log(array2);
 //console.log(array3);
-console.log(array5);
+console.log(array6);

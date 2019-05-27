@@ -45,7 +45,7 @@ const tasks = [
 //var array4=tasks.map(task => task.duration).reduce((previus,current)=>previus+current,0)
 //var array4=tasks.reduce((previus,current)=>previus+current.duration,0);
 const array5 = tasks.reduce((previus, current) => previus.length < current.name.length ?
-  previus = current.name : previus = previus, "");
+   current.name :  previus, "");
 
 //const array6 = tasks.reduce(function (previus, current) {
 //  if (previus.legnth < current.name.length) {

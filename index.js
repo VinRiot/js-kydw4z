@@ -40,12 +40,13 @@ const tasks = [
 //  //.sort(x => x.importancia)
 //  .sort(x => x.name).reverse()
 //
-const array3=tasks.find(x=>x.duration==60);
+//const array3=tasks.find(x=>x.duration==60);
 
-
+var array4=tasks.map(task => task.duration).reduce((previus,current)=>previus+current,0)
 
 //console.log(arrayfilter);
 //console.log(array);
 //console.log(array1);
 //console.log(array2);
-console.log(array3);
+//console.log(array3);
+console.log(array4);

@@ -61,14 +61,12 @@ const tasks = [
 //  return previus;
 //},"")
 
-const template=document.getElementById('app');
-console.log(template)
+const template = document.getElementById('app');
+//console.log(template)
 
-const iamintodo=true;
-const titletodo='todo';
-const titledone='done';
 
-template.innerHTML = `<h1>${iamintodo ? titletodo : titledone}</h1>`
+
+template.innerHTML = `<h1>${tasks.map(x=>`<li>${x.name}-${x.duration}</li>`).join("")}</h1>`
 
 
 

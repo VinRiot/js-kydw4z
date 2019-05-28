@@ -49,7 +49,7 @@ const tasks = [
 
 
 
-   const array6= tasks.reduce((previus,current)=>{previus+(current.name),0})
+//const array6= tasks.reduce((previus,current)=>{previus+(current.name),0})
 
 //const array6 = tasks.reduce(function (previus, current) {
 //  if (previus.legnth < current.name.length) {
@@ -61,7 +61,14 @@ const tasks = [
 //  return previus;
 //},"")
 
+const template=document.getElementById('app');
+console.log(template)
 
+const iamintodo=true;
+const titletodo='todo';
+const titledone='done';
+
+template.innerHTML = `<h1>${iamintodo ? titletodo : titledone}</h1>`
 
 
 
@@ -70,4 +77,4 @@ const tasks = [
 //console.log(array1);
 //console.log(array2);
 //console.log(array3);
-console.log(array6);
+//console.log(array6);

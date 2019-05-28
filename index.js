@@ -62,12 +62,12 @@ const tasks = [
 //},"")
 
 const template = document.getElementById('app');
-//console.log(template)
 
 
 
-template.innerHTML = `<h1>${tasks.map(x=>`<li>${x.name}-${x.duration}</li>`).join("")}</h1>`
 
+//template.innerHTML = `<h1>${tasks.map(x=>`<li>${x.name}-${x.duration}</li>`).join("")}</h1>`
+template.innerHTML = `<h1>${tasks.map(({name,duration})=>`<li>${name}-${duration}</li>`).join("")}</h1>`
 
 
 //console.log(arrayfilter);

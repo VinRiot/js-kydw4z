@@ -61,13 +61,14 @@ const tasks = [
 //  return previus;
 //},"")
 
-const template = document.getElementById('app');
+const [template] = document.getElementsByClassName('app');
 
 
 
 
-//template.innerHTML = `<h1>${tasks.map(x=>`<li>${x.name}-${x.duration}</li>`).join("")}</h1>`
+template.innerHTML = `<h1>${tasks.map(x=>`<li>${x.name}-${x.duration}</li>`).join("")}</h1>`
 //template.innerHTML = `<h1>${tasks.map(({name,duration})=>`<li>${name}-${duration}</li>`).join("")}</h1>`
+
 
 
 
